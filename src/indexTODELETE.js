@@ -7,14 +7,13 @@ const Box = posed.div({
   hidden: {
     opacity: 0.3,
     scale: 0.1,
-    transition: { duration: 4000, delay: 4000 }
+    transition: { duration: 4000 }
   },
   visible: {
     opacity: 1,
     scale: 1,
     transition: {
-      duration: 4000,
-      delay: 4000
+      duration: 4000
     }
   }
 });
@@ -22,10 +21,14 @@ const Box = posed.div({
 class Example extends React.Component {
   state = { isVisible: true };
 
-  componentDidMount() {
-    setInterval(() => {
-      this.setState({ isVisible: !this.state.isVisible });
-    }, 8000);
+  //   componentDidMount() {
+  //     setInterval(() => {
+  //       this.setState({ isVisible: !this.state.isVisible });
+  //     }, 4000);
+  //   }
+
+  mountOnce() {
+    this.setState({ isVisible: !this.state.isVisible });
   }
 
   render() {

@@ -1,10 +1,12 @@
-.wrapper {
-  color: red;
-}
-
-.box {
+.circlePose {
   width: 500px;
   height: 500px;
-  background: #ff1c68;
+  background: #b0cbf3;
   transform-origin: 50% 50%;
+  border-radius: 50%;
+  // position: absolute;
+}
+
+.test {
+  color: red;
 }

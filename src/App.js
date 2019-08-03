@@ -1,13 +1,11 @@
-import React from "react";
-import logo from "./logo.svg";
+import React, { Component } from "react";
 import "./App.css";
-import BoxWrap from "./components/circle";
+import Circle from "./components/circle";
 
 function App() {
   return (
     <div className="App">
-      <h1>This is a test</h1>
-      <BoxWrap />
+      <Circle />
       <header className="App-header" />
     </div>
   );

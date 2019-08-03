@@ -1,37 +1,12 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import posed from "react-pose";
-import "./styles.css";
+import "./index.css";
+import App from "./App";
+import * as serviceWorker from "./serviceWorker";
 
-const Box = posed.div({
-  hidden: {
-    opacity: 0.3,
-    scale: 0.1,
-    transition: { duration: 4000, delay: 4000 }
-  },
-  visible: {
-    opacity: 1,
-    scale: 1,
-    transition: {
-      duration: 4000,
-      delay: 4000
-    }
-  }
-});
+ReactDOM.render(<App />, document.getElementById("root"));
 
-class Example extends React.Component {
-  state = { isVisible: true };
-
-  componentDidMount() {
-    setInterval(() => {
-      this.setState({ isVisible: !this.state.isVisible });
-    }, 8000);
-  }
-
-  render() {
-    const { isVisible } = this.state;
-    return <Box className="box" pose={isVisible ? "visible" : "hidden"} />;
-  }
-}
-
-ReactDOM.render(<Example />, document.getElementById("root"));
+// If you want your app to work offline and load faster, you can change
+// unregister() to register() below. Note this comes with some pitfalls.
+// Learn more about service workers: https://bit.ly/CRA-PWA
+serviceWorker.unregister();

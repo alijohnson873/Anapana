@@ -6,6 +6,8 @@ function App() {
   return (
     <div className="App">
       <Circle />
+      <Circle />
+      <Circle />
       <header className="App-header" />
     </div>
   );

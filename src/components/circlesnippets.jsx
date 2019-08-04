@@ -1,3 +1,28 @@
+///////////////// To do list//////////////////
+
+// Push To New Repo
+
+// Execute delay with interval
+
+// cancel interval on click
+
+//move to center on click
+
+//put text in middle of pose div
+
+//change text in middle of pose div
+
+//read about ketframes
+
+//What do I want////////////////
+
+//props
+
+//Inhale
+//In Hold
+//Exhale
+//Ex Hold
+
 import React, { Component } from "react";
 // import ReactDOM from "react-dom";
 import posed from "react-pose";

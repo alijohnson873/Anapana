@@ -9,7 +9,6 @@ const CirclePose = posed.div({
   exhale: {
     opacity: 0.4,
     scale: 0.5,
-    // left: "10%",
     transition: ({ exhaleDuration, inhaleHoldDelay }) => ({
       duration: exhaleDuration,
       delay: inhaleHoldDelay
@@ -27,32 +26,57 @@ const CirclePose = posed.div({
   }
 });
 
-class Circle extends Component {
-  state = { hasInhaled: false, isClicked: false };
+class CircleContainer extends Component {
+  state = { isInhaled: false, isClicked: false };
+
+  breathingText = this.state.isInhaled
+    ? console.log("Breath Out")
+    : console.log("Breath In");
 
   clickCircle = () => {
     setInterval(() => {
-      console.log("I clicked the circle");
       this.setState({
-        hasInhaled: !this.state.hasInhaled
+        isInhaled: !this.state.isInhaled
       });
     }, 8000);
     this.setState({
-      isClicked: !this.state.activePosition
+      isClicked: !this.state.isClicked
     });
   };
 
   render() {
-    const { hasInhaled } = this.state;
+    const { isInhaled } = this.state;
     return (
       <section>
         <CirclePose
           className={styles.circlePose}
-          pose={hasInhaled ? "inhale" : "exhale"}
+          pose={isInhaled ? "inhale" : "exhale"}
           inhaleDuration={data[0].inhale}
           inhaleHoldDelay={data[0].inhaleHold}
           exhaleDuration={data[0].exhale}
           exhaleHoldDelay={data[0].exhaleHold}
+          onClick={this.clickCircle}
+        >
+          <h1>{data[0].name}</h1>
+        </CirclePose>
+        <CirclePose
+          className={styles.circlePose}
+          pose={isInhaled ? "inhale" : "exhale"}
+          inhaleDuration={data[1].inhale}
+          inhaleHoldDelay={data[1].inhaleHold}
+          exhaleDuration={data[1].exhale}
+          exhaleHoldDelay={data[1].exhaleHold}
+          onClick={this.clickCircle}
+        >
+          <h1>{data[1].name}</h1>
+        </CirclePose>
+        <CirclePose
+          className={styles.circlePose}
+          pose={isInhaled ? "inhale" : "exhale"}
+          inhaleDuration={data[1].inhale}
+          inhaleHoldDelay={data[1].inhaleHold}
+          exhaleDuration={data[1].exhale}
+          exhaleHoldDelay={data[1].exhaleHold}
           onClick={this.clickCircle}
         />
       </section>
@@ -60,4 +84,4 @@ class Circle extends Component {
   }
 }
 
-export default Circle;
+export default CircleContainer;

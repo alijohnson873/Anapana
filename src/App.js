@@ -1,13 +1,11 @@
 import React, { Component } from "react";
 import "./App.css";
-import Circle from "./components/circle";
+import CircleContainer from "./components/circle";
 
 function App() {
   return (
     <div className="App">
-      <Circle />
-      <Circle />
-      <Circle />
+      <CircleContainer />
       <header className="App-header" />
     </div>
   );

@@ -19,6 +19,13 @@ const data = [
     inhaleHold: 7000,
     exhale: 8000,
     exhaleHold: 0
+  },
+  {
+    name: "Testing",
+    inhale: 500,
+    inhaleHold: 0,
+    exhale: 500,
+    exhaleHold: 0
   }
 ];
 export default data;

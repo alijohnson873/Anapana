@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./App.css";
-import CircleContainer from "./components/circle";
+import CircleContainer from "./containers/CircleContainer";
 
 function App() {
   return (

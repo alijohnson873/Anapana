@@ -1,9 +1,8 @@
-section {
+.flexWrap {
   color: rgb(10, 8, 8);
-  // background-color: rgb(29, 3, 3);
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
+  // align-items: center;
+  justify-content: space-between;
 }

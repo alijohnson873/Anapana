@@ -1,9 +1,7 @@
 import React, { Component } from "react";
-// import ReactDOM from "react-dom";
+
 import posed from "react-pose";
 import styles from "./Circle.module.scss";
-
-// import { red } from "ansi-colors";
 
 const CirclePose = posed.div({
   exhale: {
@@ -14,7 +12,6 @@ const CirclePose = posed.div({
     })
   },
   inhale: {
-    // opacity: 0.7,
     scale: 1,
     transition: ({ inhaleDuration }) => ({
       duration: inhaleDuration
@@ -66,7 +63,6 @@ class Circle extends Component {
     }, delay);
   };
 
-  //click to turn off circle breathing
   turnOffClick = () => {
     if (this.state.isClicked === true) {
       console.log("is Clicked is true");

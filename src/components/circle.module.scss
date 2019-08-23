@@ -1,6 +1,6 @@
 .circlePose {
-  width: 500px;
-  height: 500px;
+  width: 30vw;
+  height: 30vw;
   background: #b0cbf3;
   transform-origin: 50% 50%;
   border-radius: 50%;
@@ -9,4 +9,11 @@
   justify-content: center;
   font-size: 50px;
   color: white;
+}
+
+@media only screen and (max-width: 800px) {
+  .circlePose {
+    width: 200px;
+    height: 200px;
+  }
 }

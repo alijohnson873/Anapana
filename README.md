@@ -4,7 +4,7 @@ https://anapana.alicjohnson.co.uk/
 
 Try out different yogic breathing techniques. Simply click on and breathe with the circles as they expand and contract. 
 
-Created to relax, pass data into react components, and use pose animation library. 
+Created to practise passing data into react components, to explore the pose animation library and to relax! 
 
 
 ## Available Scripts

@@ -2,9 +2,9 @@
 
 https://anapana.alicjohnson.co.uk/
 
-Try out different yogic breathing techniques. Simply click on and breathe with the circles as they expand and contract. 
+Try out different yogic breathing techniques with this app. Simply click on and breathe with the circles as they expand and contract. 
 
-Created to practise passing data into react components, to explore the pose animation library and to relax! 
+Created to practise passing data into React components, to explore the pose javascript animation library (https://popmotion.io/pose/) and to relax! 
 
 
 ## Available Scripts

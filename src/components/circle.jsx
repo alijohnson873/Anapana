@@ -45,7 +45,6 @@ class Circle extends Component {
     });
   };
 
-  //click to start breathing
   clickCircle = delay => {
     this.turnOffClick();
     this.inhaleOnFirstClick();

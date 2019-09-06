@@ -1,11 +1,11 @@
 ## Anapana
 
-Try out different yogic breathing techniques. Simply click on and breathe with the circles as they expand and contract. 
+https://anapana.alicjohnson.co.uk/
 
-Created to relax, pass data into react components, and use pose animation library. 
+Try out different yogic breathing techniques with this app. Simply click on and breathe with the circles as they expand and contract. 
 
+Created to practise passing data into React components, to explore the pose javascript animation library (https://popmotion.io/pose/) and to relax! 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 
